@@ -1,0 +1,16 @@
+.blubblepic {
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 16%;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.blubblepic:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}

@@ -1,0 +1,57 @@
+footer {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-row {
+  margin: 10px 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 50px;
+}
+
+.dark .footer {
+  background: #000;
+  color: #fff;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: green;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0073e6;
+}
+
+.footerlinks a:link {
+  text-decoration: none;
+}
+
+.footerlinks a {
+  color: green; /* text color to white */
+  font-weight: bold; /* Makes the text bold */
+  text-decoration: none; /* Removes underline */
+}
+
+.footerlinks a:visited {
+  color: green; /*  visited links stay white */
+}
+
+.footerlinks a:hover {
+  color: lime; /*hover color */
+}

@@ -1,0 +1,67 @@
+form {
+  border: none;
+  height: 100%;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.formatForm {
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.content h1 {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  color: yellow;
+}
+
+#myVideo {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #myVideo {
+    position: static;
+  }
+
+  .content {
+    position: absolute;
+  }
+}

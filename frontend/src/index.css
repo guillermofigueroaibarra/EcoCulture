@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #ced8ff;
+  color: black;
+  font-size: 17px;
+}
+
+.container.dark {
+  background: #222;
+  color: white;
+}

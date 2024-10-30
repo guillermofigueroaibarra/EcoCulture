@@ -1,0 +1,54 @@
+/* Create three equal colss that floats next to each other */
+.cols {
+  float: left;
+  width: 33.33%;
+  height: auto;
+}
+
+/* Clear floats after the colss */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 5%;
+}
+
+/* Responsive layout - makes the three colss stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .cols {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: auto;
+  }
+}
+
+.recycleimgs {
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 16%;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.recycleimgs:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+#maintext {
+  text-align: center;
+  padding: 40px;
+}

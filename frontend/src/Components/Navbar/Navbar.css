@@ -1,0 +1,88 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 7%;
+  transition: 0.5s;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar li:hover:not(.active) {
+  color: lime;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: green;
+  font-weight: bold;
+}
+
+.toggle-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.dark .navbar {
+  background: #000;
+  color: #fff;
+}
+
+.navbar a:link {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .navbar ul.show {
+    display: block;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+  }
+}
+
+.navbar:hover ul {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
