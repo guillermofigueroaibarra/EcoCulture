@@ -6,6 +6,7 @@ const storage = multer.diskStorage({
   },
 });
 
+// test
 const upload = multer({ storage });
 
 export default upload;
