@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #ced8ff;
+  color: black;
+  font-size: 17px;
+}
+
+.container.dark {
+  background: #222;
+  color: white;
+}
+
+.adminContent {
+  flex: 1; /* Takeremaining space */
+  padding: 1rem; /* Add some spacing for content */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  background-color: #e0fcd4;
+}
+
+.adminLayout {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* change form outline color when input fields are clicked */
+select,
+input,
+textarea {
+  border: 1px solid gray;
+  outline-color: green;
+  border-radius: 3px;
+}

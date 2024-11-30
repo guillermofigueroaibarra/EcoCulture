@@ -5,5 +5,363 @@
   "pollutionClimateChange": "Pollution Contributes to Climate Change: Greenhouse gases such as carbon dioxide and methane, released through industrial activities, deforestation, and agriculture, trap heat in the atmosphere. This drives global warming, leading to more frequent extreme weather events like hurricanes, droughts, and heatwaves.",
   "waterPollution": "Water Pollution Harms Ecosystems: Industrial waste, agricultural runoff, and sewage discharge contribute to water pollution. This contamination affects drinking water sources and harms aquatic ecosystems, causing fish kills, loss of biodiversity, and ecosystem damage.",
   "airPollution": "Air Pollution Causes Health Problems: Air pollution, primarily from vehicle emissions, industrial activities, and burning fossil fuels, can cause respiratory and cardiovascular diseases, as well as premature deaths. The World Health Organization estimates that air pollution contributes to millions of deaths worldwide each year.",
-  "resourceIntro": "Welcome to the EcoCulture resource page! Here, you can discover various types of recyclable materials and learn effective ways to recycle them. Simply click on the categories below to find valuable information on recycling practices, as well as resources about local institutions and companies that can assist you in your recycling journey. Together, we can make a positive impact on our environment and promote sustainable living. Dive in and empower yourself with knowledge that can lead to meaningful change!"
+  "resourceIntro": "Welcome to the EcoCulture resource page! Here, you can discover various types of recyclable materials and learn effective ways to recycle them. Simply click on the categories below to find valuable information on recycling practices, as well as resources about local institutions and companies that can assist you in your recycling journey. Together, we can make a positive impact on our environment and promote sustainable living. Dive in and empower yourself with knowledge that can lead to meaningful change!",
+
+  "paper_cardboard": "Paper and cardboard are among the most commonly recycled materials, and their recycling helps conserve trees and reduce waste. Items like newspapers, office paper, cardboard boxes, and books (without plastic coatings) are recyclable and can be reused in many creative ways, such as for crafts, DIY projects, or even as garden mulch. To recycle them effectively, ensure they are clean and free from food contamination, and flatten any cardboard boxes to save space. While many curbside recycling programs accept paper and cardboard, it's always good to check with your local recycling center for specific guidelines on drop-off locations and acceptable materials.",
+  "plastics": "Plastics, including items like water bottles, containers, and packaging, are highly versatile but can take hundreds of years to decompose in landfills. Recycling plastic is essential for reducing pollution and conserving resources. You can reuse plastics in creative ways, such as making planters or storage containers, or upcycle them into new objects. However, not all plastics are recyclable, and it's important to rinse containers to avoid contamination. Many centers accept various plastics, but it's essential to check for specific recycling codes and whether your local program accepts items like plastic bags or straws. If in doubt, take plastics to a nearby recycling facility that specializes in this material.",
+  "glass": "Glass is a 100% recyclable material, and its recycling is incredibly valuable because it can be recycled indefinitely without losing quality. Common glass recyclables include bottles, jars, and food containers, which can be cleaned and reused for a variety of purposes, such as storage or as decorative items. Recycling glass requires ensuring it is free from food residue, and in some cases, it may need to be sorted by color. While curbside recycling often accepts glass, check your local guidelines, as some areas may only accept certain types or require specific drop-off locations. Glass is typically one of the most eco-friendly materials to recycle due to its durability and infinite recyclability.",
+  "metals": "Metals like aluminum, steel, and other metals are highly recyclable and valuable materials. Aluminum cans, steel food cans, foil, and even scrap metal can be reused to create new products, reducing the need for raw materials. Recycling metals conserves natural resources and significantly reduces energy use compared to manufacturing new metal products. To recycle metals, clean containers to remove food waste, and if possible, crush aluminum cans to save space. Most centers accept metal recyclables, and for larger items like appliances or tools, look for scrap yards or dedicated metal recycling facilities. Metals retain their quality after recycling, making them an essential material to divert from landfills.",
+  "electronics": "E-waste, or electronic waste, includes items like old computers, phones, TVs, and batteries. Recycling electronics is crucial because many of these devices contain hazardous materials such as lead and mercury, which can pollute the environment if disposed of improperly. Before recycling, remove any personal data from devices and check if they still function, as donating them can extend their life. Many electronics retailers and local centers offer e-waste recycling services, where old gadgets are safely broken down and reused for parts or materials. Since electronics are not suitable for regular trash bins, be sure to use certified e-waste recycling centers to ensure safe and responsible disposal.",
+  "textiles": "Textiles, including clothing, towels, sheets, and fabric-based items, represent a significant portion of waste that often ends up in landfills. Recycling textiles helps reduce the environmental impact of waste and provides an opportunity to repurpose fabrics for new uses, such as insulation or even new clothing. Clothing in good condition can be donated, while worn-out fabrics can be repurposed into rags, quilts, or other household items. Some recycling centers accept textiles, even if they’re no longer wearable, and may send them to facilities that turn them into other products. Donating or recycling textiles helps reduce waste and keeps materials in use, benefiting both the environment and the community.",
+
+  "table1": [
+    {
+      "location": "DuPage County Recycling Events",
+      "description": "Frequent events for paper recycling and shredding across the county.",
+      "link": "https://www.dupagecounty.gov/",
+      "linkText": "DuPage County Recycling Events"
+    },
+    {
+      "location": "SCARCE (Addison, IL)",
+      "description": "Environmental education center that accepts paper, books, and other recyclables.",
+      "link": "https://www.scarce.org/",
+      "linkText": "SCARCE Recycling Programs"
+    },
+    {
+      "location": "Carol Stream Recycling Events",
+      "description": "Seasonal events for paper shredding and recycling in Carol Stream.",
+      "link": "https://cslibrary.org",
+      "linkText": "Carol Stream Recycling Guide"
+    },
+    {
+      "location": "Naperville Household Hazardous Waste Facility",
+      "description": "Supports recycling initiatives and provides resources on accepted materials.",
+      "link": "https://www.naperville.il.us/",
+      "linkText": "Naperville Recycling Center"
+    },
+    {
+      "location": "West Chicago Environmental Commission",
+      "description": "Hosts events and provides resources on recycling and environmental protection in West Chicago.",
+      "link": "https://westchicago.org/",
+      "linkText": "West Chicago Environmental Resources"
+    },
+    {
+      "location": "Elmhurst Public Library",
+      "description": "Offers periodic paper shredding events and educational resources on recycling.",
+      "link": "https://elmhurstpubliclibrary.org/",
+      "linkText": "Elmhurst Public Library Recycling Events"
+    },
+    {
+      "location": "Glen Ellyn Environmental Commission",
+      "description": "Hosts community recycling events and provides guidance on local recycling initiatives.",
+      "link": "https://www.glenellyn.org/",
+      "linkText": "Glen Ellyn Recycling Information"
+    }
+  ],
+  "table2": [
+    {
+      "location": "Green Earth Plastics Recycling (Addison, IL)",
+      "description": "Recycles a variety of plastics and buys bulk plastic waste from businesses.",
+      "link": "https://greenearthplastics.com/",
+      "linkText": "Green Earth Plastics Recycling"
+    },
+    {
+      "location": "SCARCE (Addison, IL)",
+      "description": "Environmental education center that accepts certain types of plastic for recycling.",
+      "link": "https://www.scarce.org/",
+      "linkText": "SCARCE Recycling Programs"
+    },
+    {
+      "location": "Waste Management Recycling Drop-off (Lombard, IL)",
+      "description": "Accepts residential plastic recycling; provides information on accepted materials.",
+      "link": "https://www.wm.com/us/en/recycle-right",
+      "linkText": "Waste Management Recycling Information"
+    },
+    {
+      "location": "Naperville Recycling Drop-off Center",
+      "description": "Accepts a variety of recyclables, including plastic containers and packaging.",
+      "link": "https://www.naperville.il.us/",
+      "linkText": "Naperville Recycling Center"
+    },
+    {
+      "location": "Avangard Innovative (Woodridge, IL)",
+      "description": "Specializes in buying bulk recyclable plastics and reselling reclaimed plastic materials.",
+      "link": "https://www.avaicg.com/",
+      "linkText": "Avangard Innovative Recycling Solutions"
+    },
+    {
+      "location": "Groot Industries (Elk Grove Village, IL)",
+      "description": "Offers residential and commercial plastic recycling services and drop-off locations.",
+      "link": "https://www.groot.com/",
+      "linkText": "Groot Industries Recycling Services"
+    },
+    {
+      "location": "West Chicago Public Works Recycling Drop-Off",
+      "description": "Hosts recycling events for plastic and other materials, focusing on environmental sustainability.",
+      "link": "https://westchicago.org/",
+      "linkText": "West Chicago Public Works Recycling"
+    }
+  ],
+
+  "table3": [
+    {
+      "location": "Strategic Materials (Batavia, IL)",
+      "description": "Processes and recycles glass materials for reuse in new products; accepts large quantities from businesses.",
+      "link": "https://www.strategicmaterials.com/",
+      "linkText": "Strategic Materials Glass Recycling"
+    },
+    {
+      "location": "LRS Recycling (Chicago, IL)",
+      "description": "Offers glass recycling services, especially for commercial clients; works with municipalities to reduce glass waste.",
+      "link": "https://www.lrsrecycles.com/",
+      "linkText": "LRS Recycling"
+    },
+    {
+      "location": "Waste Management (Multiple Locations)",
+      "description": "Provides glass recycling services through curbside programs and drop-off centers for residents and businesses.",
+      "link": "https://www.wm.com/us/en/recycle-right",
+      "linkText": "Waste Management Recycling Information"
+    },
+    {
+      "location": "SCARCE (Addison, IL)",
+      "description": "Environmental organization that educates on recycling and provides drop-off locations for specific glass items.",
+      "link": "https://www.scarce.org/",
+      "linkText": "SCARCE Recycling Programs"
+    },
+    {
+      "location": "Naperville Environmental Collection Center",
+      "description": "Accepts glass materials as part of household recycling, primarily focused on electronics, glass containers, and jars.",
+      "link": "https://www.naperville.il.us/",
+      "linkText": "Naperville Recycling Center"
+    },
+    {
+      "location": "Groot Industries (Elk Grove Village, IL)",
+      "description": "Offers curbside and drop-off recycling programs that accept glass containers, available to residential clients.",
+      "link": "https://www.groot.com/",
+      "linkText": "Groot Industries Recycling Services"
+    },
+    {
+      "location": "Recycle Depot (Joliet, IL)",
+      "description": "Recycling center that accepts glass along with other household materials; serves both individuals and businesses.",
+      "link": "https://www.recycledepot.org/",
+      "linkText": "Recycle Depot Information"
+    },
+    {
+      "location": "Elgin Recycling (Gilberts, IL)",
+      "description": "Accepts certain types of glass materials and offers education on recycling practices for individuals and businesses.",
+      "link": "https://www.elginrecycling.com/",
+      "linkText": "Elgin Recycling Services"
+    },
+    {
+      "location": "West Chicago Public Works Recycling Drop-Off",
+      "description": "Hosts community recycling events, including glass collection, to promote sustainable practices.",
+      "link": "https://westchicago.org/",
+      "linkText": "West Chicago Public Works Recycling"
+    }
+  ],
+
+  "table4": [
+    {
+      "location": "DuPage Metal Recycling (West Chicago, IL)",
+      "description": "Buys a variety of scrap metals including copper, aluminum, brass, and steel from the public and businesses.",
+      "link": "https://www.dupagerecycling.com/",
+      "linkText": "DuPage Metal Recycling"
+    },
+    {
+      "location": "All American Recycling (Addison, IL)",
+      "description": "Offers metal recycling services for both ferrous and non-ferrous metals; open to both public and businesses.",
+      "link": "https://www.allamericanrecycling.com/",
+      "linkText": "All American Recycling"
+    },
+    {
+      "location": "Elgin Recycling (Gilberts, IL)",
+      "description": "Accepts a wide range of metals, including aluminum, brass, copper, and stainless steel, and offers scrap metal purchasing.",
+      "link": "https://www.elginrecycling.com/",
+      "linkText": "Elgin Recycling Services"
+    },
+    {
+      "location": "AUR (American Recycling and Disposal) (Lombard, IL)",
+      "description": "Specializes in recycling ferrous and non-ferrous metals; offers drop-off and pick-up services for scrap metal.",
+      "link": "https://www.aurrecycling.com/",
+      "linkText": "American Recycling and Disposal"
+    },
+    {
+      "location": "Groot Industries Recycling (Elk Grove Village, IL)",
+      "description": "Provides recycling services for various materials including metals, primarily for residential and commercial clients.",
+      "link": "https://www.groot.com/",
+      "linkText": "Groot Industries Recycling Services"
+    },
+    {
+      "location": "Recycling Systems, Inc. (Chicago, IL)",
+      "description": "Processes ferrous and non-ferrous metals and offers competitive pricing for metal recycling.",
+      "link": "https://www.recyclingsystemsinc.com/",
+      "linkText": "Recycling Systems, Inc."
+    },
+    {
+      "location": "MetalX (Franklin Park, IL)",
+      "description": "Buys scrap metal from individuals and businesses, specializing in recycling aluminum, steel, and copper.",
+      "link": "https://www.metalx.net/",
+      "linkText": "MetalX Recycling"
+    },
+    {
+      "location": "United Scrap Metal (Cicero, IL)",
+      "description": "A full-service metal recycling center accepting all types of metals from both individuals and commercial clients.",
+      "link": "https://www.unitedscrap.com/",
+      "linkText": "United Scrap Metal"
+    },
+    {
+      "location": "Naperville Environmental Collection Center",
+      "description": "Accepts certain types of metals as part of its recycling program, primarily focused on electronics and household metals.",
+      "link": "https://www.naperville.il.us/",
+      "linkText": "Naperville Recycling Center"
+    },
+    {
+      "location": "West Chicago Public Works Recycling Drop-Off",
+      "description": "Hosts recycling events for metals and other materials; supports community recycling initiatives.",
+      "link": "https://westchicago.org/",
+      "linkText": "West Chicago Public Works Recycling"
+    }
+  ],
+  "table5": [
+    {
+      "location": "eWorks Electronics Recycling (Elk Grove Village, IL)",
+      "description": "Specializes in electronics recycling for residents and businesses, including electronic glass like screens and monitors.",
+      "link": "https://www.eworksesi.org/",
+      "linkText": "eWorks Electronics Recycling"
+    },
+    {
+      "location": "SCARCE (Addison, IL)",
+      "description": "Environmental education organization that accepts electronics for recycling, including certain electronics with screens.",
+      "link": "https://www.scarce.org/",
+      "linkText": "SCARCE Electronics Recycling"
+    },
+    {
+      "location": "Naperville Environmental Collection Center",
+      "description": "Accepts electronics such as TVs, monitors, and other devices with glass screens for recycling from DuPage County residents.",
+      "link": "https://www.naperville.il.us/",
+      "linkText": "Naperville Recycling Center"
+    },
+    {
+      "location": "Best Buy (Multiple Locations)",
+      "description": "Retailer with a comprehensive electronics recycling program that accepts items with electronic glass, such as TVs and computer monitors.",
+      "link": "https://www.bestbuy.com/site/services/recycling/",
+      "linkText": "Best Buy Recycling Program"
+    },
+    {
+      "location": "Green Disk (Mail-In Recycling Service)",
+      "description": "Offers mail-in recycling for a wide range of electronics, including devices with screens and other electronic glass components.",
+      "link": "https://www.greendisk.com/",
+      "linkText": "Green Disk Electronics Recycling"
+    },
+    {
+      "location": "DuPage County Electronics Recycling Events",
+      "description": "Hosts electronics recycling events throughout the year, accepting items with electronic glass like monitors and TVs.",
+      "link": "https://www.dupagecounty.gov/",
+      "linkText": "DuPage County Electronics Recycling Events"
+    },
+    {
+      "location": "Vintage Tech Recyclers (Romeoville, IL)",
+      "description": "Certified electronics recycler that accepts a wide range of electronics, including TVs, monitors, and other items with glass screens.",
+      "link": "https://vintagetechrecyclers.com/",
+      "linkText": "Vintage Tech Electronics Recycling"
+    },
+    {
+      "location": "Com2 Recycling Solutions (Carol Stream, IL)",
+      "description": "Electronics recycler that specializes in glass-to-glass recycling for monitors and screens.",
+      "link": "https://www.com2recycling.com/",
+      "linkText": "Com2 Recycling Solutions"
+    },
+    {
+      "location": "Recycle Technologies (Villa Park, IL)",
+      "description": "Accepts various electronics, including devices with glass screens, for recycling and offers secure data destruction.",
+      "link": "https://www.recycletechnologies.com/",
+      "linkText": "Recycle Technologies"
+    },
+    {
+      "location": "West Chicago Public Works Electronics Drop-Off",
+      "description": "Accepts electronic waste during designated drop-off times, including monitors and TVs with glass screens.",
+      "link": "https://westchicago.org/",
+      "linkText": "West Chicago Electronics Recycling"
+    }
+  ],
+  "table6": [
+    {
+      "location": "Goodwill (Multiple Locations)",
+      "description": "Accepts clothing donations for resale, keeping textiles out of landfills and supporting community services.",
+      "link": "https://www.goodwill.org/",
+      "linkText": "Goodwill Donation Locations"
+    },
+    {
+      "location": "Salvation Army Family Stores (Multiple Locations)",
+      "description": "Accepts donations of clothing and other textiles for resale; proceeds support social services and programs.",
+      "link": "https://satruck.org/",
+      "linkText": "Salvation Army Donation Locations"
+    },
+    {
+      "location": "H&M (Multiple Locations)",
+      "description": "Offers a garment recycling program where customers can bring any brand of used clothing in exchange for a discount coupon.",
+      "link": "https://www2.hm.com/en_us/ladies/shop-by-feature/16r-garment-collecting.html",
+      "linkText": "H&M Garment Recycling Program"
+    },
+    {
+      "location": "Zara (Multiple Locations)",
+      "description": "Clothing retailer that accepts gently used clothing donations in-store for recycling through its Garment Collection Program.",
+      "link": "https://www.zara.com/",
+      "linkText": "Zara Garment Collection Program"
+    },
+    {
+      "location": "GreenDrop Donation Centers (Various Locations)",
+      "description": "Accepts clothing donations on behalf of charities like the Purple Heart Foundation; resells items to fund community programs.",
+      "link": "https://www.gogreendrop.com/",
+      "linkText": "GreenDrop Donation Centers"
+    },
+    {
+      "location": "Clothes Mentor (Elmhurst, IL)",
+      "description": "Buys gently used, stylish clothing and accessories; offers cash on the spot for accepted items.",
+      "link": "https://www.clothesmentor.com/",
+      "linkText": "Clothes Mentor Buy and Sell Clothing"
+    },
+    {
+      "location": "EcoATM Gazelle (Multiple Locations)",
+      "description": "Although primarily for electronics, some EcoATM locations also accept certain types of textiles for reuse or recycling.",
+      "link": "https://www.ecoatm.com/",
+      "linkText": "EcoATM Gazelle Recycling Locations"
+    },
+    {
+      "location": "USAgain (Various Locations)",
+      "description": "Provides textile recycling bins throughout DuPage County for clothing, shoes, and textiles; materials are reused or repurposed.",
+      "link": "https://www.usagain.com/",
+      "linkText": "USAgain Textile Recycling Bins"
+    },
+    {
+      "location": "DuPage County Clothing Recycling Events",
+      "description": "Hosts seasonal clothing and textile recycling events, allowing residents to drop off gently used items for reuse or recycling.",
+      "link": "https://www.dupagecounty.gov/",
+      "linkText": "DuPage County Recycling Events"
+    },
+    {
+      "location": "Planet Aid (Multiple Locations)",
+      "description": "Yellow bins placed throughout the area accept used clothing and textiles, supporting global and environmental causes.",
+      "link": "https://www.planetaid.org/",
+      "linkText": "Planet Aid Clothing Donation Bins"
+    },
+    {
+      "location": "Savers (Naperville, IL)",
+      "description": "Thrift store that accepts donations of clothing and household items, reselling to reduce waste and support local programs.",
+      "link": "https://www.savers.com/",
+      "linkText": "Savers Thrift Store"
+    },
+    {
+      "location": "ThreadUp (Online Thrift Store)",
+      "description": "Online resale platform where individuals can send in clothes to be sold; offers Clean Out Kits for easy donation or consignment.",
+      "link": "https://www.thredup.com/",
+      "linkText": "ThreadUp Clothing Recycling Program"
+    },
+    {
+      "location": "Patagonia (Multiple Locations)",
+      "description": "Outdoor clothing retailer that accepts worn Patagonia gear for recycling and resale; also supports textile recycling initiatives.",
+      "link": "https://www.patagonia.com/recycling/",
+      "linkText": "Patagonia Worn Wear Program"
+    }
+  ]
 }

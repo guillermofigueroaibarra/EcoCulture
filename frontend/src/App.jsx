@@ -6,6 +6,8 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
+import Product from "./pages/Product";
+import Cart from "./pages/Cart";
 
 import Donations from "./pages/Donations";
 import Footer from "./Components/Footer/Footer";
@@ -26,9 +28,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Donations" element={<Donations />} />
+        <Route path="/product/:productId" element={<Product />} />
         <Route path="/About" element={<About />} />
         <Route path="/Resources" element={<Resources />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Cart" element={<Cart />} />
       </Routes>
 
       <Footer theme={theme} setTheme={setTheme} />

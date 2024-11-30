@@ -1,0 +1,88 @@
+/* Styles specifically for the List component */
+
+/* Container for the table */
+.list-container {
+  width: 90%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Table header styles */
+.list-header {
+  display: grid;
+  grid-template-columns: 150px 1fr 2fr 100px 150px; /* Adjust columns for Image, Name, Description, Price, Category */
+  background-color: black;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.list-header b {
+  padding: 10px;
+}
+
+/* Donation items container */
+.list-item {
+  display: grid;
+  grid-template-columns: 150px 1fr 2fr 100px 150px; /* Same grid as headers */
+  align-items: center;
+  border-bottom: 5px solid #ddd;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* Individual cell styles */
+.list-item img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+}
+
+.list-item p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Remove button styles */
+.list-item .remove {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.list-item .remove:hover {
+  color: black;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .list-header,
+  .list-item {
+    grid-template-columns: 80px 1fr 1fr 80px 1fr; /* Adjust grid for smaller screens */
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .list-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .list-container {
+    width: 100%;
+  }
+
+  .list-header b {
+    font-size: 11px;
+    padding: 0;
+  }
+}

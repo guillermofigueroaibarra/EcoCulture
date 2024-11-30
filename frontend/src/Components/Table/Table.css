@@ -1,0 +1,49 @@
+/* Add this to your CSS file, e.g., App.css */
+.table-container {
+  display: flex;
+  justify-content: center; /* Centers table horizontally */
+  overflow-x: auto; /* Keeps the horizontal overflow property */
+  padding: 20px; /* Optional: adds space around the table */
+}
+
+.recycling-table {
+  width: 100%;
+  max-width: 1600px; /* Set a max-width to keep the table responsive */
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.recycling-table th,
+.recycling-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  min-width: 150px;
+  color: black;
+}
+
+.recycling-table th {
+  background-color: #4caf50;
+  color: black;
+}
+
+.recycling-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.recycling-table a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.recycling-table a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .recycling-table th,
+  .recycling-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,98 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  padding: 15px 7%;
+  transition: 0.5s;
+}
+
+.logo {
+  width: 150px;
+}
+
+.navbar ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar li:hover:not(.active) {
+  color: lime;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: green;
+  font-weight: bold;
+}
+
+.toggle-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.dark .navbar {
+  background: #000;
+  color: #fff;
+}
+
+.navbar a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.logout-button {
+  width: 10%;
+  padding: 12px;
+  font-size: 16px;
+  color: black;
+  background-color: lime;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: yellow;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 5%; /* Reduced padding */
+  }
+
+  .logo {
+    display: block; /* Adjust visibility */
+    width: 120px; /* Reduced size for small screens */
+  }
+
+  /* Menu (Hidden by Default on Small Screens) */
+  .navbar ul {
+    display: none; /* Hidden menu */
+    flex-direction: column; /* Vertical layout */
+    position: absolute;
+    top: 60px; /* Below the navbar */
+    left: 0;
+    background: black;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .navbar ul.show {
+    display: flex; /* Show when active */
+  }
+
+  .navbar ul li {
+    margin: 10px 0; /* Spaced vertically */
+    font-size: 20px; /* Slightly larger */
+  }
+  .logout-button {
+    width: 15%;
+  }
+}

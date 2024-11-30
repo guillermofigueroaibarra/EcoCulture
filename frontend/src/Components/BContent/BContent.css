@@ -2,3 +2,13 @@
   text-align: center;
   padding: 40px;
 }
+
+.tableformat {
+  width: 100%;
+}
+
+.test1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

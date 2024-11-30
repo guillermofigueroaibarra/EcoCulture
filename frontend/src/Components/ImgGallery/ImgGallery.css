@@ -1,8 +1,8 @@
 .img-gallery {
   position: relative;
   width: 100%;
-  max-width: 800px; /* Adjust as needed */
-  height: 400px; /* Adjust as needed */
+  max-width: 1400px; /* Adjust as needed */
+  height: 700px; /* Adjust as needed */
   overflow: hidden;
   margin: auto;
 }
@@ -19,4 +19,50 @@
 
 .gallery-image.active {
   opacity: 1; /* Show the active image */
+}
+
+/* Arrow styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+  left: 20px; /* Adjust spacing from the left edge */
+}
+
+.right-arrow {
+  right: 20px; /* Adjust spacing from the right edge */
+}
+
+/* Media query adjustments */
+@media screen and (max-width: 1200px) {
+  .img-gallery {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
 }

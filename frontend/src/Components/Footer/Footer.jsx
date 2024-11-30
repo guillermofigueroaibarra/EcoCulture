@@ -8,7 +8,7 @@ function Footer() {
       <div class="footer-row">
         <p class="footerlinks">
           <NavLink to="/" className="footerlinks" activeClassName="active-link">
-            Login/Signup{" "}
+            Home{" "}
           </NavLink>
           |{" "}
           <NavLink

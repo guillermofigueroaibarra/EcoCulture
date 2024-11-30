@@ -45,8 +45,15 @@ button:hover {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
   color: yellow;
+}
+
+h2 {
+  text-align: center;
+  padding: 35px;
+  font-size: 40px;
+  color: green;
 }
 
 #myVideo {
@@ -56,6 +63,7 @@ h1 {
   min-width: 100%;
   min-height: 100%;
 }
+
 @media screen and (max-width: 768px) {
   #myVideo {
     position: static;
@@ -63,5 +71,7 @@ h1 {
 
   .content {
     position: absolute;
+    margin-bottom: 50px;
+    height: auto;
   }
 }
