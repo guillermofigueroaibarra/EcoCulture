@@ -1,0 +1,111 @@
+/* General styles for the PlaceOrder component */
+.place-order-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.place-order-container form {
+  background-color: transparent;
+  padding: 30px;
+  height: 50%;
+}
+
+/* Left side (form) */
+.left-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.addressinfo {
+  color: green;
+  padding: 30px;
+  margin: 5px;
+  text-align: center;
+}
+
+.left-side h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.left-side input {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.left-side input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.left-side button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left-side button:hover {
+  background-color: #45a049;
+}
+
+/* Right side (pickup location) */
+.right-side {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.right-side h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.right-side p {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.pOrderImg {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .place-order-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .left-side h1,
+  .right-side h1 {
+    text-align: center;
+  }
+
+  .left-side input {
+    font-size: 14px;
+  }
+
+  .left-side button {
+    font-size: 14px;
+  }
+}

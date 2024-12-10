@@ -2,7 +2,13 @@ import React from "react";
 import "./BContent.css";
 import ImgGallery from "../ImgGallery/ImgGallery";
 import Table from "../Table/Table";
-function BContent({ images, interval = 3000, heading, text, tableText }) {
+function BContent({
+  images = [],
+  interval = 3000,
+  heading = "",
+  text = "",
+  tableText = [],
+}) {
   // Destructure props as an object
   return (
     <div className="test1">

@@ -1,8 +1,7 @@
 .search-bar-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  background-color: pink;
 }
 
 .search-bar-form {
@@ -25,8 +24,4 @@
   height: 20px;
   margin-left: 10px;
   cursor: pointer;
-}
-
-.search-bar-icon:hover {
-  opacity: 0.7; /* Optional: for hover effect */
 }

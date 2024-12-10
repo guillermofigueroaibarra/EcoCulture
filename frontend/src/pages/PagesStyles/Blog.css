@@ -1,0 +1,86 @@
+/* Container for the blog component */
+.blog-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.blog-posts h2 {
+  color: green;
+}
+
+/* Main blog title */
+.blog-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Introduction text */
+.blog-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.backButton {
+  width: 10%;
+}
+
+/* Individual blog post container */
+.blog-post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Blog post hover effect */
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog post title */
+.blog-post-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Blog post date */
+.blog-post-date {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+/* Blog post excerpt */
+.blog-post-excerpt {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Read more link */
+.blog-read-more {
+  font-size: 1rem;
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.blog-read-more:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .backButton {
+    width: 40%;
+  }
+}

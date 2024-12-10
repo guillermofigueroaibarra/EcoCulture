@@ -64,3 +64,9 @@ form button:hover {
 label {
   font-style: bold;
 }
+
+@media screen and (max-width: 600px) {
+  form button {
+    width: 100%;
+  }
+}

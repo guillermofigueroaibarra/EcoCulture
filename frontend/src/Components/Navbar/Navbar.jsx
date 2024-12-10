@@ -13,9 +13,17 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = ({ theme, setTheme }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { getCartCount } = useContext(ShopContext); // get number of items in cart
+  const { getCartCount, navigate, token, setToken, setCartItems } =
+    useContext(ShopContext); // get number of items in cart
   const toggleMode = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
+  const logout = () => {
+    navigate("/Home.jsx");
+    localStorage.removeItem("token"); // remove token from local storage
+    setToken("");
+    setCartItems({}); // empty cart
   };
 
   const toggleMenu = () => {
@@ -43,19 +51,33 @@ const Navbar = ({ theme, setTheme }) => {
         <NavLink to="/Resources">
           <li>Resources</li>
         </NavLink>
-
+        <NavLink to="/Blog">
+          <li>Blog</li>
+        </NavLink>
         <NavLink to="/About">
-          <li>About</li>
+          <li>About Us</li>
         </NavLink>
         <NavLink to="/Contact">
           <li>Contact</li>
         </NavLink>
+
+        <NavLink to="/">
+          {/* Check if the token exists toherwise don't display the logout word*/}
+          {token ? (
+            <li onClick={logout} style={{ color: "red" }}>
+              Logout
+            </li>
+          ) : null}
+        </NavLink>
       </ul>
 
-      <NavLink to="/Cart">
-        <img src={cartIcon} alt="" className="cart" />
-        <p>{getCartCount()}</p>
-      </NavLink>
+      {/* Check if the token exists otherwise don't display the cart*/}
+      {token ? (
+        <NavLink to="/Cart">
+          <img src={cartIcon} alt="" className="cart" />
+          <p>{getCartCount()}</p>
+        </NavLink>
+      ) : null}
       <img
         onClick={toggleMode}
         src={theme === "light" ? toggle_light : toggle_dark}

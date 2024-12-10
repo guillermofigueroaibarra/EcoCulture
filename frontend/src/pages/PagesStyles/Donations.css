@@ -11,16 +11,17 @@
 
 /* Filter Bar */
 .filter-bar {
-  position: sticky; /* Makes the filter bar sticky */
-  top: 20px; /* Distance from the top of the viewport */
-  width: 20%; /* Default width for larger screens */
-  height: calc(100vh - 40px); /* Full viewport height minus some padding */
+  position: sticky; /*filter bar sticky */
+  top: 0;
+  width: 18%; /* Default width for larger screens */
+  height: 100%; /* Full viewport height */
   border-radius: 5px;
   background-color: transparent;
-  color: black;
+  color: yellow;
   padding: 15px;
   box-sizing: border-box;
   overflow-y: auto; /* Ensures the content is scrollable if it's too long */
+  z-index: 10; /* Keeps it above other content if necessary */
 }
 
 .filter-bar-header {
@@ -29,16 +30,26 @@
   align-items: center;
   cursor: pointer;
   color: yellow;
+  background-color: black;
+  padding: 6px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .filter-bar-title {
   font-weight: bold;
+  font-size: 25px;
   margin: 0;
 }
 
 .filter-dropdown-icon {
   width: 20px;
   height: 20px;
+  padding-left: 4px;
   transition: transform 0.3s;
 }
 
@@ -48,15 +59,14 @@
 
 .filter-options {
   margin-top: 10px;
-  background-color: green;
-  padding: 20px;
-  border-radius: 30px;
+  padding: 10px;
 }
 
 .filter-category-list label {
   display: block;
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 25px;
+  padding-bottom: 30px;
 }
 
 /* Content Section */
@@ -103,7 +113,7 @@
     width: 100%; /* Take full width on smaller screens */
     height: auto; /* Let the height be dynamic */
     position: relative; /* Remove sticky positioning */
-    margin-bottom: 20px; /* Add some space at the bottom */
+    margin-bottom: 5px; /* Add some space at the bottom */
   }
 
   .product-display {
@@ -112,6 +122,11 @@
 
   .content-header h1 {
     font-size: 20px; /* Smaller font size for smaller screens */
+  }
+
+  .filter-category-list label {
+    font-size: 15px;
+    padding-bottom: 5px;
   }
 }
 

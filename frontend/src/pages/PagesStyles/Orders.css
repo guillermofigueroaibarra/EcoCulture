@@ -1,0 +1,230 @@
+.order-item p {
+  color: black;
+}
+/* Container for the entire Orders section */
+.orders-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading Style */
+.orders-container h1 {
+  margin-top: 20px;
+}
+
+/* Individual Order Item */
+.order-item {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr; /* Image, Item details, and Status section */
+  border-bottom: 2px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.order-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-item div {
+  padding-left: 20px;
+}
+
+.order-item p {
+  margin: 5px 0;
+}
+
+.order-item .item-details p {
+  font-weight: bold;
+}
+
+/* Order Status Section */
+.order-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.status-text {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.status-text.red {
+  color: red;
+}
+
+.status-text.green {
+  color: green;
+}
+
+.status-text.blue {
+  color: blue;
+}
+
+.status-text.black {
+  color: black;
+}
+
+.status-text.gray {
+  color: pink;
+}
+
+.status-text.purple {
+  color: purple;
+}
+
+.order-status button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.order-status button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .order-item {
+    grid-template-columns: 1fr; /* Stack items on top of each other on smaller screens */
+    text-align: center;
+  }
+
+  .order-item img {
+    margin: 0 auto;
+  }
+
+  .order-item .item-details,
+  .order-item .order-status {
+    padding-left: 0;
+  }
+
+  .order-status button {
+    width: 100%;
+  }
+}
+
+.status-explanation {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-explanation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.status-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.status-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-pending {
+  background-color: blue; /* Yellow for pending */
+}
+
+.status-readyforpickup {
+  background-color: #4caf50; /* Green for confirmed */
+}
+
+.status-delivered {
+  background-color: #2196f3; /* Blue for delivered */
+}
+
+.status-canceled {
+  background-color: #f44336; /* Red for canceled */
+}
+
+.status-explanation {
+  margin: 40px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-explanation p {
+  text-align: center;
+}
+
+.status-explanation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.status-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-pending {
+  background-color: blue; /* Yellow for pending */
+}
+
+.status-confirmed {
+  background-color: purple; /* Green for confirmed */
+}
+
+.status-readyforpickup {
+  background-color: green; /* Blue for ready for pickup */
+}
+
+.status-canceled {
+  background-color: #f44336; /* Red for canceled */
+}
+
+.status-expired {
+  background-color: #9e9e9e; /* Gray for expired */
+}
+
+.status-picked {
+  background-color: #000000; /* Black for picked up */
+}

@@ -1,10 +1,33 @@
-import React from "react";
 import "./Contact.css";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 function ContactForm() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_pz5n4nn", "template_js4b9h2", form.current, {
+        publicKey: "tG9zpqUnke4rii1gW",
+      })
+      .then(
+        () => {
+          toast.success("Message sent!");
+
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          toast.error(response.data.message);
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <section className="contact">
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <h2>Contact Us!</h2>
         <div className="inputBox">
           <label>Full Name</label>
@@ -12,7 +35,7 @@ function ContactForm() {
             type="text"
             className="field"
             placeholder="Enter your name"
-            name="Name"
+            name="from_name"
             required
           />
         </div>
@@ -23,7 +46,7 @@ function ContactForm() {
             type="email"
             className="field"
             placeholder="Enter your e-mail"
-            name="e-mail"
+            name="from_email"
             required
           />
         </div>
@@ -31,7 +54,7 @@ function ContactForm() {
         <div className="inputBox">
           <label>Message</label>
           <textarea
-            name="Message"
+            name="message"
             className="field mess"
             placeholder="Enter your message"
             required

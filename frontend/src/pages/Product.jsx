@@ -3,10 +3,11 @@ import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import ImgGallery from "../Components/ImgGallery/ImgGallery";
 import "./PagesStyles/Product.css";
+import { toast } from "react-toastify";
 
 function Product() {
   const { productId } = useParams();
-  const { products, addItemToCart, cartItems } = useContext(ShopContext); // Access cartItems
+  const { products, addItemToCart, cartItems, token } = useContext(ShopContext); // Access cartItems
   const [productData, setProductData] = useState(null);
 
   const fetchProductData = () => {
@@ -22,9 +23,19 @@ function Product() {
     }
   }, [productId, products]);
 
+  const handleAddToCart = () => {
+    // if user is logged in allow to add item to cart
+    if (token) {
+      addItemToCart(productData._id);
+      // else ask user to login
+    } else {
+      toast.error("Please log in to add items to cart!");
+    }
+  };
+
   // Calculate remaining quantity dynamically
   const remainingQuantity = productData
-    ? productData.price - (cartItems[productId] || 0)
+    ? productData.quantity - (cartItems[productId] || 0)
     : 0;
 
   return productData ? (
@@ -34,12 +45,11 @@ function Product() {
           <ImgGallery images={productData.image} />
         </div>
         <div className="product-info">
-          <h1>{productData.name}</h1>
+          <h2>{productData.name}</h2>
+
+          <p className="descriptionText">{productData.description}</p>
           <p>Quantity available: {remainingQuantity}</p>
-          <p>{productData.description}</p>
-          <button onClick={() => addItemToCart(productData._id)}>
-            ADD TO CART
-          </button>
+          <button onClick={handleAddToCart}>ADD TO CART</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,118 @@
+/* Container for the table */
+.list-container {
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  margin-bottom: 400px;
+  padding: 20px;
+}
+
+/* Table header styles */
+.list-header {
+  display: grid;
+  grid-template-columns: 300px 2fr 1fr 50px; /* Adjust columns for Image, Name, Quantity, and Trash Icon */
+  background-color: black;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.list-header b {
+  padding: 20px;
+}
+
+button {
+  width: 40%;
+  padding: 20px;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px;
+}
+
+button:hover {
+  background-color: lime;
+}
+
+/* Donation items container */
+.list-item {
+  display: grid;
+  grid-template-columns: 300px 2fr 1fr 50px; /* Same grid as headers */
+  align-items: center;
+  border-bottom: 5px solid #ddd;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+/* Individual cell styles */
+.list-item img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+}
+
+/* Adjust item text */
+.list-item div {
+  text-align: center;
+}
+
+.list-item p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Trash icon styles */
+.list-item img:last-child {
+  width: 60px;
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
+  justify-self: center; /* Centers the trash icon in its column */
+  align-self: center;
+}
+
+.list-item img:last-child:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .list-header,
+  .list-item {
+    grid-template-columns: 200px 1fr 1fr 40px; /* Adjust grid for smaller screens */
+    font-size: 12px;
+  }
+
+  .list-item img {
+    width: 160px;
+    height: 120px;
+  }
+
+  .list-item img:last-child {
+    width: 60px;
+    height: autopx;
+    padding-left: 10px;
+  }
+
+  .list-container {
+    width: 100%;
+  }
+
+  .list-header b {
+    font-size: 11px;
+    padding: 10px;
+  }
+}

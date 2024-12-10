@@ -6,7 +6,7 @@ import ProductItem from "../Components/ProductItem/ProductItem";
 import SearchBar from "../Components/SearchBar/SearchBar"; // Import the SearchBar component
 
 function Donations() {
-  const [showFilter, setShowFilter] = useState(false);
+  const [showFilter, setShowFilter] = useState(true);
   const [filterDonations, setFilterDonations] = useState([]);
   const [category, setCategory] = useState([]);
   const [query, setQuery] = useState(""); // State for the search query
@@ -49,13 +49,14 @@ function Donations() {
   return (
     <div className="donations-container">
       {/* Search Bar Component */}
+
       {/* Pass the setQuery function as onSearch */}
       <div className="filter-bar">
         <div
           className="filter-bar-header"
           onClick={() => setShowFilter(!showFilter)}
         >
-          <p className="filter-bar-title">SEARCH AND FILTER</p>
+          <p className="filter-bar-title">FILTER</p>
           <img
             src={dropdown}
             className={`filter-dropdown-icon ${showFilter ? "rotate-90" : ""}`}
@@ -64,7 +65,6 @@ function Donations() {
         </div>
         {showFilter && (
           <div className="filter-options">
-            <SearchBar onSearch={setQuery} /> <p>CATEGORIES</p>
             <div className="filter-category-list">
               <label>
                 <input
@@ -72,7 +72,7 @@ function Donations() {
                   value="Clothes"
                   onChange={toggleCategory}
                 />{" "}
-                Clothes
+                Clothes and Accesories
               </label>
               <label>
                 <input
@@ -97,7 +97,7 @@ function Donations() {
                   value="Books"
                   onChange={toggleCategory}
                 />{" "}
-                Books
+                Books and Media
               </label>
               <label>
                 <input type="checkbox" value="Food" onChange={toggleCategory} />{" "}
@@ -119,6 +119,34 @@ function Donations() {
                 />{" "}
                 Shoes
               </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  value="PetSupplies"
+                  onChange={toggleCategory}
+                />{" "}
+                Pet Supplies
+              </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  value="Tools"
+                  onChange={toggleCategory}
+                />{" "}
+                Tools
+              </label>
+
+              <label>
+                <input
+                  type="checkbox"
+                  value="SportsEquipment"
+                  onChange={toggleCategory}
+                />{" "}
+                Sports Equipment
+              </label>
+
               <label>
                 <input
                   type="checkbox"
@@ -132,13 +160,16 @@ function Donations() {
         )}
       </div>
       <div className="content-section">
+        <div className="search-bar">
+          <SearchBar onSearch={setQuery} />
+        </div>
         <div className="product-display">
           {filterDonations.map((item, index) => (
             <ProductItem
               key={index}
               name={item.name}
               id={item._id}
-              price={item.price}
+              quantity={item.quantity}
               image={item.image}
             />
           ))}
