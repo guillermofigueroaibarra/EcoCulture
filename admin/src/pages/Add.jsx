@@ -16,7 +16,7 @@ function Add({ token }) {
   // state variables for other form inputs
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [price, setPrice] = useState("");
+  const [quantity, setQuantity] = useState("");
   const [category, setCategory] = useState("");
 
   const onSubmitHandler = async (e) => {
@@ -26,7 +26,7 @@ function Add({ token }) {
 
       formData.append("name", name);
       formData.append("description", description);
-      formData.append("price", price);
+      formData.append("quantity", quantity);
       formData.append("category", category);
 
       // check if image x is available then append it else don't include it
@@ -51,7 +51,7 @@ function Add({ token }) {
         setImage2(false);
         setImage3(false);
         setImage4(false);
-        setPrice("");
+        setQuantity("");
       } else {
         // if not succesfully added display error message
         toast.error(response.data.mesage);
@@ -157,16 +157,28 @@ function Add({ token }) {
             <option value="Food">Food</option>
             <option value="Houseware">Houseware</option>
             <option value="Shoes">Shoes</option>
+            <option value="SportsEquipment">SportsEquipment</option>
+            <option value="Tools">Tools</option>
+            <option value="PetSupplies">Pet Supplies</option>
             <option value="Others">Others</option>
           </select>
         </div>
 
         <div>
-          <p>Product Price</p>
+          <p>Quantity</p>
           <input
-            onChange={(e) => setPrice(e.target.value)} // event set name function
-            value={price}
-            type="Number"
+            onChange={(e) => {
+              const value = e.target.value;
+              const number = parseInt(value, 10); // Parse the input as an integer
+              if (number > 0 && Number.isInteger(number)) {
+                setQuantity(number); // update if valid
+              } else {
+                setQuantity(""); // Reset to empty
+                toast.error("Enter an integer value greater than 1"); // display toast error
+              }
+            }}
+            value={quantity}
+            type="number"
             placeholder="0"
           />
         </div>

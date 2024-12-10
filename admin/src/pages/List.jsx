@@ -40,6 +40,26 @@ function List({ token }) {
     }
   };
 
+  const updateQuantity = async (id, quantity) => {
+    try {
+      const response = await axios.post(
+        backendUrl + "/api/donation/update-quantity",
+        { id, quantity: Number(quantity) },
+        { headers: { token } }
+      );
+
+      if (response.data.success) {
+        toast.success(response.data.message);
+        await fetchList(); // Refresh the list after the update
+      } else {
+        toast.error(response.data.message);
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to update quantity");
+    }
+  };
+
   useEffect(() => {
     fetchList();
   }, []);
@@ -54,7 +74,7 @@ function List({ token }) {
           <b>Image</b>
           <b>Name</b>
           <b>Description</b>
-          <b>Price</b>
+          <b>Quantity</b>
           <b>Category</b>
         </div>
 
@@ -64,15 +84,30 @@ function List({ token }) {
             <img src={item.image[0]} alt={item.name} />
             <p>{item.name}</p>
             <p>{item.description}</p>
-            <p>
-              {currency}
-              {item.price}
-            </p>
+            <input
+              type="number"
+              value={item.quantity}
+              min="0"
+              onChange={(e) => {
+                const newList = [...list];
+                newList[index].quantity = e.target.value;
+                setList(newList); // Update local state immediately
+              }}
+            />
             <p>{item.category}</p>
 
             <p className="remove" onClick={() => removeDonation(item._id)}>
               DELETE
             </p>
+
+            <div className="actions">
+              <button
+                className="savebuttonq"
+                onClick={() => updateQuantity(item._id, item.quantity)}
+              >
+                Save
+              </button>
+            </div>
           </div>
         ))}
       </div>

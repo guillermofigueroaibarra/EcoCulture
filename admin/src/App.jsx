@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div>
-      <ToastContainer position="bottom-right" />
+      <ToastContainer />
       {token === "" ? (
         <Login setToken={setToken} />
       ) : (
