@@ -4,6 +4,7 @@ import {
   listDonation,
   removeDonation,
   donationInfo,
+  updateDonationQuantity,
 } from "../controllers/donationsController.js";
 import upload from "../middleware/multer.js";
 import adminAuth from "../middleware/adminAuth.js";
@@ -25,5 +26,6 @@ donationRouter.post(
 donationRouter.post("/remove", adminAuth, removeDonation);
 donationRouter.post("/single", donationInfo);
 donationRouter.get("/list", listDonation);
+donationRouter.post("/update-quantity", adminAuth, updateDonationQuantity);
 
 export default donationRouter;

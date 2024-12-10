@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const donationSchema = new mongoose.Schema({
   name: { type: String, require: true },
   description: { type: String, require: true },
-  price: { type: Number, require: true },
+  quantity: { type: Number, require: true },
   image: { type: Array, require: true },
   category: { type: String, require: true },
   date: { type: Number, require: true },

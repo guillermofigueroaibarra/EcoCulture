@@ -5,7 +5,7 @@ import donationModel from "../models/donationModel.js";
 const addDonation = async (req, res) => {
   try {
     // variable for item info
-    const { name, description, price, category } = req.body;
+    const { name, description, quantity, category } = req.body;
 
     // if image is available, then store it in corresponding variables
     const image1 = req.files.image1 && req.files.image1[0];
@@ -32,7 +32,7 @@ const addDonation = async (req, res) => {
     const donationData = {
       name,
       description,
-      price: Number(price),
+      quantity: Number(quantity),
       image: imagesUrl,
       category,
       date: Date.now(),
@@ -80,4 +80,40 @@ const donationInfo = async (req, res) => {
   }
 };
 
-export { addDonation, listDonation, removeDonation, donationInfo };
+const updateDonationQuantity = async (req, res) => {
+  try {
+    const { id, quantity } = req.body;
+
+    // Validate that the quantity is a valid number and is positive
+    if (isNaN(quantity) || quantity < 0) {
+      return res.json({
+        success: false,
+        message: "Quantity must be a valid positive number",
+      });
+    }
+
+    // Find the donation by ID and update its quantity
+    const donation = await donationModel.findByIdAndUpdate(
+      id,
+      { quantity: Number(quantity) },
+      { new: true } // Return the updated document
+    );
+
+    if (!donation) {
+      return res.json({ success: false, message: "Donation not found" });
+    }
+
+    res.json({ success: true, message: "Quantity updated", donation });
+  } catch (error) {
+    console.error(error);
+    res.json({ success: false, message: error.message });
+  }
+};
+
+export {
+  addDonation,
+  listDonation,
+  removeDonation,
+  donationInfo,
+  updateDonationQuantity,
+};
